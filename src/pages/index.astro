@@ -1,8 +1,9 @@
 ---
-import '../styles/global.css';
+import Navigation from "../components/Navigation.astro";
+import "../styles/global.css";
 
-const pageTitle = "home | wdjacobo blog"
-const pageHeader1 = "wdjacobo's blog home"
+const pageTitle = "home | wdjacobo blog";
+const pageHeader1 = "wdjacobo's blog home";
 ---
 
 <html lang="en">
@@ -15,9 +16,7 @@ const pageHeader1 = "wdjacobo's blog home"
     <title>{pageTitle}</title>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/blog/">Blog</a>
-    <a href="/about/">About</a>
-    <h1>{pageHeader1}</h1>
+    <Navigation />
+      <h1>{pageHeader1}</h1>
   </body>
 </html>
